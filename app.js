@@ -58,5 +58,8 @@ app.use(function (err, req, res, next) {
   });
 });
 
+var dpSpider = require('./lib/dpSpider');
+dpSpider();
+
 module.exports = app;
 /* eslint-enable fecs-indent */
